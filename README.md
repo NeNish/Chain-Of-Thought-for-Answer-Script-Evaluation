@@ -40,3 +40,7 @@ vercel --prod
 ## Notes
 - PDF extraction here relies on browser `File.text()` and is best-effort.
 - For production-grade PDF/DOCX parsing and model-based scoring, add server-side parsers and LLM integration.
+
+
+## Troubleshooting
+- If you see `Cannot find module "tailwindcss"`, this project does **not** require Tailwind. Ensure `postcss.config.mjs` is present with an empty `plugins` object and remove old Tailwind-specific PostCSS configs left from other templates.
